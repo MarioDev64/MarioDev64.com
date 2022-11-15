@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1">
+    <meta name="keywords" content="Web Developer, Front-End Developer, Front-End Engineer, ">
+    <meta name="description" content="Web developer with hight knowledge and skills with client-side languajes like javascript, jquery, angular... And server-side languages like php, nodejs, python...">
+    <meta name="owner" content="Mario Junior Torres Perez">
+    <meta name="author" content="https://www.behance.net/MarioDev64">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Css Tools -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="fonts/aldo/aldo.css">
+    <link rel="stylesheet" href="fonts/aller/aller.css">
+
+    <!-- Website Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/show-hide-menu-effect.css">
+    <link rel="stylesheet" href="css/sectionSlideAnimation.css">
+    <link rel="stylesheet" href="css/contact-animation.css">
+
+    <!-- Javascript -->
+    <script src="js/modernizr-custom.js" charset="utf-8"></script>
+    <script src="js/jquery-3.2.0.slim.min.js" charset="utf-8"></script>
+
+    <title>MarioDev64 - Software Developer</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="index.html">
+                <figure>
+                    <img id="header_icon" src="img/icon.png" alt="mariodev64-icon">
+                </figure>
+            </a>
+            <a href="index.html">Mario Torres</a>
+        </h1>
+
+        <nav id="ioMenu">
+            <div id="showMenu" class="ioMenuMovil">
+                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            </div>
+
+            <div id="card_menu">
+                <div id="hideMenu" class="ioMenuMovil">
+                    <i class="fa fa-times-circle fa-2x" aria-hidden="true"></i>
+                </div>
+
+                <figure id="logo_menu"><img src="img/logo.png" alt="mariodev64-logo"></figure>
+                <ul>
+                    <li><a onClick="navSection('home') "href="#">Home</a></li>
+                    <li><a onClick="navSection('aboutme')"href="#">Me</a></li>
+                    <li><a onClick="navSection('skills')"href="#">Skills</a></li>
+                    <li><a id="contact-menu" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="prev_section" onClick="displaySection('prev'); rightSlide()"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+        <div id="next_section" onClick="displaySection('next'); leftSlide()"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+    </header>
+
+    <div id="slider">
+        <section class="slide" id="home" style="display: block">
+            <div class="main-animation">
+                <div id="particles-js"></div>
+            </div>
+
+            <div class="main-logo">
+                <h2>I'm a Software Developer</h2>
+                <figure>
+                    <img src="img/logo.png" alt="mariodev64-logo">
+                </figure>
+            </div>
+
+            <div class="buttons-container">
+                <div id="hiredme">HIRE ME</div>
+                <a href="docs/CV_EN.pdf" target="_blank">DESCARGAR CV</a>
+            </div>
+        </section>
+
+        <section class="slide" id="aboutme" style="display: none;">
+            <div class="top_am">
+                <figure><img src="img/picture.jpg" alt=""></figure>
+                <div class="text_am">
+                  <h2>SOBRE MI</h2>
+                  <p>Soy un apasionado de la programación, para mí la programación tanto web como de escritorio es lo más cercano que tenemos a la magia. Podemos crear algo llamativo, inteligente y novedoso prácticamente de la NADA.
+                  Si lo sé, que depende de muchos aspectos físicos para que esta se desarrolle a su plenitud pero Amén.</p>
+                  <p><em>La programación web es mi fuerte.</em> Soy un profesional orientado a resultados, que cree en la máxima claridad y resolución en lo que hace. Siempre estoy aprediendo nuevas técnicas y habilidades y perfeccionando las que tengo,
+                      abierto a enseñar y ser enseñado. </p>
+                  <p>Diseñar interfaces bonitas y que tengan una buena experiencia de usuario es importante pero de que sirve si nadie puede usarla? Así que yo digo:  <strong>crea cosas bonitas pero que funcionen.</strong></p>
+                </div>
+             </div>
+              <div class="bottom_am">
+                <article>
+                    <figure>
+                        <img src="img/fundacion-1.png" alt="fundacionsoydecristo.org">
+                    </figure>
+                    <a href="https://www.behance.net/MarioDev64" target="_blank">
+                      <div class="card_service">
+                        <h3><strong>Desarrollo de</strong>Website</h3>
+                        <p>Website hecha en wordpress, para una fundación.</p>
+                      </div>
+                    </a>
+                </article>
+                <article>
+                    <figure>
+                        <img src="img/eShop-1.png" alt="eShop-eccommerce">
+                    </figure>
+                    <a href="https://www.behance.net/MarioDev64" target="_blank">
+                      <div class="card_service">
+                        <h3><strong>Desarrollo de </strong>Wesite</h3>
+                        <p>Eccommerce desarrollada para empresa servicios hecha en wordpress.</p>
+                      </div>
+                    </a>
+                </article>
+                <article>
+                    <figure>
+                        <img src="img/dynamic-1.jpg" alt="dynamicoach-website">
+                    </figure>
+                    <a href="https://www.behance.net/MarioDev64" target="_blank">
+                      <div class="card_service">
+                        <h3><strong>Enmaquetación de</strong>Website</h3>
+                        <p>Página web de un producto, plantilla hecha desde cero.</p>
+                      </div>
+                    </a>
+                </article>
+                <article>
+                    <figure>
+                        <img src="img/Outbit-1.jpg" alt="Outbit pagina de servicios">
+                    </figure>
+                    <a href="https://www.behance.net/MarioDev64" target="_blank">
+                      <div class="card_service">
+                        <h3><strong>Desarrollo de</strong>Website</h3>
+                        <p>Página web creada con wordpress para empresa que brinda servicos de hosting
+                            y configuracion de servidores etc.</p>
+                      </div>
+                    </a>
+                </article>
+              </div>
+        </section>
+
+        <section class="slide" id="skills" style="display: none;">
+            <div id="main_skills">
+                <article id="tecnicas">
+                  <h2>Skills Técnicas</h2>
+                  <div class="box_skills">
+                      <div class="skill">
+                        <h3>PROGRAMACIÓN BACK-END</h3>
+                        <div class="level" style="width:55%"></div>
+                      </div>
+
+                      <div class="skill">
+                        <h3>PROGRAMACIÓN FRONT-END</h3>
+                        <div class="level" style="width:95%"></div>
+                      </div>
+
+                      <div class="skill">
+                        <h3>WORDPRESS</h3>
+                        <div class="level" style="width:75%"></div>
+                      </div>
+
+                      <div class="skill">
+                        <h3>BASE DE DATOS</h3>
+                        <div class="level" style="width:52%"></div>
+                      </div>
+                  </div>
+                </article>
+
+                <article id="personales">
+                  <h2>Skills Personales</h2>
+                  <div class="box_skills">
+                      <div class="skill">
+                        <h3>Creatividad</h3>
+                        <div class="level" style="width:61%"></div>
+                      </div>
+
+                      <div class="skill">
+                        <h3>Trabajo en Equipo</h3>
+                        <div class="level" style="width:74%"></div>
+                      </div>
+
+                      <div class="skill">
+                        <h3>Dedicacion</h3>
+                        <div class="level" style="width:62%"></div>
+                      </div>
+
+                      <div class="skill">
+                        <h3>Comunicación</h3>
+                        <div class="level" style="width:89%"></div>
+                      </div>
+                  </div>
+                </article>
+          </div>
+
+          <div id="other_skills">
+            <article id="conocimientos">
+              <h2>Conocimientos</h2>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+                <li>SASS</li>
+                <li>GSAP</li>
+                <li>Bootstrap</li>
+              </ul>
+              <ul>
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>Python</li>
+                <li>C#</li>
+                <li>.NET</li>
+                <li>Ruby</li>
+                <li>JAVA</li>
+              </ul>
+              <ul>
+                <li>Wordpress</li>
+                <li>Joomla</li>
+                <li>Mysql</li>
+                <li>Oracle</li>
+              </ul>
+            </article>
+
+            <article id="hobbies">
+              <h2>Hobbies</h2>
+              <div class="hobby">
+                <div></div><p>Leer</p>
+              </div>
+              <div class="hobby">
+                <div></div><p>Juegos</p>
+              </div>
+              <div class="hobby">
+                <div></div><p>Música Electrónica</p>
+              </div>
+              <div class="hobby">
+                <div></div><p>Viajar</p>
+              </div>
+              <div class="hobby">
+                <div></div><p>Animación</p>
+              </div>
+              <div class="hobby">
+                <div></div><p>Cine</p>
+              </div>
+            </article>
+
+          </div>
+        </section>
+        <section class="" id="contact" style="display: none;">CONTACT</section>
+    </div>
+
+    <div id="contact_form">
+        <div id="close_form"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+        <form action="contact.php" id="form" name="form" method="post">
+            <div id="letter_logo"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+            <p>Hey, There!</p>
+
+            <input type="text" name="name" id="name" placeholder="Type your name here" >
+
+            <input type="email" name="email" id="email" placeholder="Type your email here" >
+
+            <textarea  name="message" id="message" placeholder="Type your message here" ></textarea>
+
+            <input type="submit" name="submit" id="button" value="SEND">
+        </form>
+    </div>
+
+    <div id="contact_button"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+
+    <footer>
+        <div class="rrss">
+          <a href="https://www.behance.net/MarioDev64"><i class="fa fa-behance-square" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/mario-jr-torres-perez-84468a122/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="https://github.com/MarioDev64"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+        </div>
+        <p>
+            &copy; 2022 All rights reserved
+        </p>
+    </footer>
+    <script src="js/show-hide-menu.js" charset="utf-8"></script>
+    <script src="js/section-slider.js" charset="utf-8"></script>
+    <script src="js/contact-button.js" charset="utf-8"></script>
+    <script src="js/particles.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+</body>
+</html>

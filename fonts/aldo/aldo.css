@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'aldosemibold';
+    src: url('aldo_pc-webfont.woff2') format('woff2'),
+         url('aldo_pc-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+[class^="icon-"], [class*=" icon-"]{
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /*Better Font Redering*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,985 @@
+body{
+    font-size: 16px;
+    font-family: 'aldo', sans-serif;
+    background:  #233D58;
+    position: relative;
+}
+
+/****************************************************************/
+/*************************** Header Styles **********************/
+/****************************************************************/
+header{
+    width: 100%;
+    height: 60px;
+    background: #233D58;
+    position: relative;
+    z-index: 998;
+}
+
+header h1{
+    display: none;
+}
+
+header h1 a figure #header_icon{
+    border-radius: 50px;
+    width: 100%;
+}
+
+header nav .ioMenuMovil{
+    height: 25px;
+    width: 120px;
+    cursor: pointer;
+    line-height: 40px;
+    margin: 0px 0px 0px 10px;
+    padding-top: 5px;
+}
+
+header nav .ioMenuMovil i{
+    height: 100%;
+}
+
+header nav #card_menu{
+    position: relative;
+    width: 230px;
+    height: 100%;
+    background: #FFF;
+    top: -30px;
+    left: 0px;
+    border-right: 3px solid #AFAEAE;
+    z-index: 999;
+    padding-bottom: 50px;
+    display: none;
+    border-bottom-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
+
+header nav #card_menu #logo_menu{
+    width: 80%;
+    margin: 30px 0px;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+
+header nav #card_menu #logo_menu img{
+    width: 100%;
+}
+
+header nav #card_menu ul{
+    margin-top: -20px;
+}
+
+header nav #card_menu ul li{
+    list-style: none;
+    font-size: 1.5em;
+    line-height: 37px;
+}
+
+header nav #card_menu ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header #prev_section, header #next_section{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 5px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+header #prev_section{
+    right: 40px;
+}
+
+header #next_section{
+    right: 5px;
+}
+
+header #prev_section i, header #next_section i{
+    color: white;
+    font-size: 3em;
+    position: relative;
+    top: -11px;
+}
+
+header #showMenu i{
+    color: #FFF;
+}
+
+/****************************************************************/
+/*************************** Slider Styles **********************/
+/****************************************************************/
+
+#slider{
+    width: 100%;
+	position: relative;
+	top: 66px;
+	margin-top: -66px;
+    text-align: center;
+}
+
+#slider section.slide{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#slider #home{
+    background: #233D58;
+    font-family: 'aller';
+    position: relative;
+}
+
+#slider #home .main-animation{
+    width: 80%;
+    margin-left: 10%;
+    min-height: 300px;
+    position: absolute;
+}
+
+#slider #home .main-logo{
+    background: none;
+    position: relative;
+    width: 60vw;
+    margin-left: 20vw;
+    min-height: 430px;
+}
+
+#slider #home .main-logo h2{
+    font-size: 1.2em;
+    padding-top: 80px;
+    color: #FFF;
+    font-weight: lighter;
+}
+
+#slider #home .main-logo h2 strong{
+    font-weight: bolder !important;
+    font-size: 2em;
+    font-family: 'aldo';
+    display: block;
+}
+
+#slider #home .main-logo figure,
+#slider #home .main-logo figure img{
+    width: 100%;
+    margin: 0px;
+}
+
+#slider #home  .buttons-container{
+    width: 100%;
+    text-align: center;
+}
+
+#slider #home  .buttons-container > *{
+    display: inline-block;
+    width: 40%;
+    margin: 5px 2.5%;
+    color: #FFF;
+    padding: 15px 2.5%;
+}
+
+#slider #home  .buttons-container #hiredme{
+    cursor: pointer;
+    background: #F8931F;
+    font-weight: 500;
+}
+
+#slider #home .buttons-container a{
+    text-decoration: none;
+    background: #29abe2;
+    font-weight: 500;
+}
+
+/* ---- particles.js container ---- */
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#slider #aboutme{
+    background: blue;
+    height: 400px;
+}
+
+#slider #skills{
+    background: green;
+    height: 300px;
+}
+
+#slider #portfolio{
+    background: purple;
+    height: 200px;
+}
+
+#slider #blog{
+    background: aqua;
+    height: 100px;
+}
+
+
+/****************************************************************/
+/*************************** Contact Form ***********************/
+/****************************************************************/
+
+#contact_form{
+    position: absolute;
+    right: 0px;
+    top: 55px;
+    background: #FFF;
+    width: 250px;
+    border-top: 1px solid black;
+    box-shadow: 0px 0px 3px #9F9E9E;
+    font-family: 'aller';
+    z-index: 999;
+    display: none;
+}
+
+#contact_form #close_form{
+    color: #FFF;
+    font-size: 1.5em;
+    position: absolute;
+    left: 87%;
+    top: 15px;
+}
+
+#contact_form #close_form:hover{
+    cursor: pointer;
+    -moz-transform-origin: center center;
+    -moz-animation: 1s close_form 1;
+    -webkit-transform-origin: center center;
+    -webkit-animation: close_form 1s 1;
+    -ms-transform-origin: center center;
+    -ms-animation: 1s close_form 1;
+}
+
+@-moz-keyframes close_form{
+    0%{
+        -moz-transform: rotate(-200deg);
+    }
+}
+
+@-webkit-keyframes close_form{
+    0%{
+        -webkit-transform: rotate(-200deg);
+    }
+}
+
+@-ms-keyframes close_form{
+    0%{
+        -ms-transform: rotate(-200deg);
+    }
+}
+
+#contact_form #letter_logo{
+    color: #FFF;
+    font-size: 9.5em;
+    height: 180px;
+    width: 100%;
+    margin: 0px;
+    padding-top: 30px;
+    text-align: center;
+    background: #29abe2;
+    vertical-align: middle;
+}
+
+#contact_form #letter_logo i{
+    height: 100%;
+    margin: 0px;
+}
+
+#contact_form p{
+    font-size: 18px;
+    margin: 20px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 20%;
+}
+
+#contact_form input, textarea{
+    display: block;
+    margin: 20px;
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 3px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+#contact_form textarea{
+    max-width: 90%;
+    min-width: 90%;
+    max-height: 100px;
+    min-height: 100px;
+}
+
+#contact_form #button{
+    background: #F8931F;
+    color: #FFF;
+    border: none;
+    padding: 8px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact_button{
+    width: 60px;
+    height: 60px;
+    background: #F8931F;
+    border-radius: 50%;
+    color: #FFF;
+    z-index: 80;
+    right: 40px;
+    position: fixed;
+    top: 75vh;
+}
+
+#contact_button:hover{
+    cursor: pointer;
+}
+
+#contact_button .fa-paper-plane{
+    font-size: 2em;
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+
+#slider #aboutme{
+	padding-bottom: 50px;
+    height: auto;
+}
+
+#slider #aboutme > div{
+	width: 100%;
+	margin-top: 0px;
+}
+#slider #aboutme .top_am figure{
+	width: 100%;
+	margin: 0px;
+	overflow: hidden;
+	height: 153px;
+	z-index: 5;
+	position: relative;
+}
+#slider #aboutme .top_am figure img{
+	width: 100%;
+	margin-top: -23%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+
+
+}
+#slider #aboutme .top_am .text_am{
+	font-family: 'aller';
+	background: white;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: -53px;
+	z-index: 10;
+	position: relative;
+	box-shadow: 0px 0px 3px #AFAEAE;
+	padding-bottom: 30px;
+    text-align: left;
+}
+#slider #aboutme .top_am .text_am h2{
+	background: #29abe2;
+	color: white;
+	font-weight: lighter;
+	position: relative;
+	width: 100px;
+	font-size: 1.3em;
+	padding: 10px 20px;
+	top: -2px;
+	left: -2px;
+	box-shadow: 0px 0px 3px #AFAEAE;
+}
+#slider #aboutme .top_am .text_am h2:before{
+	content: '';
+	border-color: transparent #29abe2
+                transparent transparent;
+	border-style: solid;
+	border-width: 15px 12px 0px 15px;
+
+ 	left: -26px;
+ 	top: 32px;
+	position: absolute;
+}
+#slider #aboutme .top_am .text_am h2:after{
+	content: '';
+	border-color: transparent #233D58
+                transparent transparent;
+	border-style: solid;
+	border-width: 0px 12px 10px 12px;
+
+ 	left: -23px;
+ 	top: 46px;
+	position: absolute;
+}
+#slider #aboutme .top_am .text_am p{
+	margin: 5px 30px;
+	font-size: 0.8em;
+}
+#slider #aboutme .top_am .text_am span{
+	color: #29abe2;
+	cursor: pointer;
+}
+
+
+#slider #aboutme .bottom_am{
+	position: relative;
+	display: block;
+	margin-top: 50px;
+}
+#slider #aboutme .bottom_am article{
+	width: 80%;
+	height: 160px;
+	background: #AFAEAE;
+	margin: 20px 0px;
+	margin-left: 10%;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+#slider #aboutme .bottom_am article .card_service{
+	width: 100%;
+	position: absolute;
+	background: white;
+	color: #29abe2;
+	text-decoration: none;
+	top: 66%;
+	height: 100%;
+	font-family: 'aller';
+	cursor: pointer;
+	transition-duration: 0.5s;
+	font-weight: lighter;
+	font-size: 0.8em;
+}
+
+#slider #aboutme .bottom_am .card_service:hover{
+	top: 0%;
+}
+
+#slider #aboutme .bottom_am .card_service:before{
+	font-family: 'FontAwesome';
+	content: '\f067';
+	position: absolute;
+	font-size: 1em;
+	font-weight: bold;
+	top: 5px;
+	right: 10px;
+}
+#slider #aboutme .bottom_am .card_service:hover:before{
+    -moz-transition-duration: 0.8s;
+	-moz-transform: rotate(90deg);
+}
+
+#slider #aboutme .bottom_am .card_service h3{
+	color: #AFAEAE;
+}
+#slider #aboutme .bottom_am .card_service h3 strong{
+	color: #29abe2;
+	display: block;
+}
+#slider #aboutme .bottom_am .card_service p{
+	color: black;
+	margin-top: 25px;
+}
+
+#slider #aboutme .bottom_am article figure{
+	width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#slider #aboutme .bottom_am article figure img{
+	width: 100%;
+    position: relative;
+    margin: 0 auto;
+
+}
+#slider #skills{
+	text-transform: uppercase;
+	font-family: 'aller';
+	background: #f1f1f1;
+    height: auto;
+}
+
+#slider #skills > div{
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+}
+
+#slider #skills article{
+	margin-bottom: 30px;
+    text-align: left;
+}
+#slider #skills #tecnicas,
+#slider #skills #personales{
+	width: 100%;
+}
+#slider #skills h2{
+	font-size: 1.3em;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	width: 98%;
+	margin-left: 2%;
+}
+#slider #skills .box_skills{
+	width: 98%;
+	margin-left: 1%;
+	background: white;
+	box-shadow: 0px 0px 3px #D4D2D2;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+#slider #skills .skill{
+	width: 80%;
+	margin-left: 10%;
+	position: relative;
+	margin-bottom: 20px;
+}
+#slider #skills .skill h3{
+	margin-bottom: 10px;
+	font-size: 1em;
+	position: relative;
+	z-index: 9;
+}
+#slider #skills .skill .level,
+#slider #skills .skill .rest{
+	height: 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+#slider #skills .skill .level{
+	background: #29abe2;
+}
+#slider #skills .skill .rest{
+	background: #D4D2D2;
+}
+
+#slider #skills #conocimientos ul{
+	padding: 0px;
+	margin: 0px;
+	width: 31%;
+	margin-left: 1%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#slider #skills #conocimientos ul li{
+	position: relative;
+	margin-left: 18px;
+	margin-right: 30px;
+	font-size: 0.8em;
+	margin-bottom: 15px;
+	list-style: none;
+	width: 80%;
+}
+#slider #skills #conocimientos ul li:before{
+	font-family: 'FontAwesome';
+	content: "\f046";
+	color: #29abe2;
+	font-size: 1.5em;
+	position: absolute;
+	top: -5px;
+	left: -30px;
+}
+
+#slider #skills #hobbies .hobby{
+	display: inline-block;
+	vertical-align: middle;
+	width: 40%;
+	margin:30px 4%;
+	position: relative;
+	text-align: center;
+}
+#slider #skills #hobbies .hobby > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+#slider #skills #hobbies .hobby div{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: 4px solid #29abe2;
+	box-shadow: 0px 0px 2px #D4D2D2,
+				inset 0px 0px 2px #D4D2D2;
+	position: relative;
+}
+#slider #skills #hobbies .hobby div:before{
+	font-family: 'FontAwesome';
+	font-size: 3em;
+	color: #29abe2;
+	position: relative;
+	top: 10px;
+	left: 0px;
+	text-shadow: 0px 0px 4px #D4D2D2;
+}
+
+#slider #skills #hobbies .hobby:nth-of-type(1) div:before{
+	content: "\f02d";
+}
+#slider #skills #hobbies .hobby:nth-of-type(2) div:before{
+	content: "\f11b";
+}
+
+#slider #skills #hobbies .hobby:nth-of-type(3) div:before{
+	content: "\f025";
+}
+
+#slider #skills #hobbies .hobby:nth-of-type(4) div:before{
+	content: "\f072";
+}
+
+#slider #skills #hobbies .hobby:nth-of-type(5) div:before{
+	content: "\f108";
+}
+
+#slider #skills #hobbies .hobby:nth-of-type(6) div:before{
+	content: "\f145";
+}
+
+
+#slider #skills #hobbies .hobby p{
+
+	position: relative;
+	left: 0px;
+	font-size: 0.8em;
+	width: 100%;
+}
+
+
+footer{
+    width: 100%;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    z-index: 80;
+    height: 150px;
+    position: fixed;
+    bottom: -130px;
+    transition-duration: 0.4s;
+}
+
+footer:hover{
+    bottom: -0px;
+}
+
+footer:after{
+    font-size: 4.5em;
+    color: black;
+    content: "\f107";
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+    margin-top: -30px;
+    background: black;
+    border-radius: 50%;
+    transform: rotate(180deg);
+    text-shadow: 0px 15px 0px white;
+    transition-duration: 0.3s;
+}
+
+footer:hover::after{
+    transform: rotate(0deg);
+    background: #FFF;
+    color: #000;
+    text-shadow: 0px 0px 0px black;
+}
+
+footer .rrss{
+    margin-top: 70px;
+    width: 100%;
+    height: 40px;
+}
+
+footer .rrss a{
+    font-size: 2.5em;
+    color: #FFF;
+    margin: 0 10px;
+}
+
+footer p{
+    font-size: 0.8em;
+    font-weight: lighter;
+    font-family: 'aller', 'Open Sans';
+}
+
+@media screen and (min-width: 480px){
+    #slider #home .main-logo{
+        width: 270px;
+        left: 50%;
+        margin-left: -135px;
+
+    }
+
+    #slider #home .main-logo h2{
+        font-size: 1.4em;
+    }
+
+    #slider #home .main-logo figure{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #slider #home .buttons-container > *{
+        width: 200px;
+    }
+
+    #slider #aboutme .top_am figure{
+        height: 183px;
+    }
+    #slider #blog article.double{
+        width: 402px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    #slider #aboutme > div{
+        width: 80%;
+        margin-left: 10%;
+    }
+    #slider #aboutme .top_am figure{
+        height: 213px;
+    }
+    #slider #aboutme .bottom_am article{
+        width: 40%;
+        margin: 20px 4.5%;
+    }
+    #slider #skills #hobbies .hobby{
+        width: 30%;
+        margin:10px 1%;
+    }
+
+    #slider #skills #hobbies .hobby p{
+        width: 30%;
+        left: 10%;
+        position: relative;
+        text-align: left;
+    }
+
+
+}
+
+@media screen and (min-width: 767px){
+    header h1{
+        display: inline-block;
+        width: 20%;
+        margin: 0px;
+        height: 55px;
+        margin-left: 80px;
+        line-height: 55px;
+        min-width: 200px;
+    }
+
+    header h1 > *{
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: none;
+        color: #FFF;
+        font-size: 0.8em;
+        margin: 0px 3px;
+    }
+
+    header h1 figure{
+        height: 45px;
+        width: 45px;
+        margin: 0px;
+    }
+
+    header h1 figure img{
+        width: 100%;
+    }
+
+    header nav{
+        display: inline-block;
+        vertical-align: middle;
+        width: 62%;
+        position: relative;
+    }
+
+    header nav #showMenu,
+    header nav #hideMenu{
+        display: none;
+    }
+
+    header nav #card_menu{
+        display: inline-block;
+        border: none;
+        background: none;
+        position: relative;
+        top: 0px;
+        width: 100%;
+        text-align: right;
+        padding-bottom: 0px;
+    }
+
+    header nav #card_menu figure{
+        display: none;
+    }
+
+    header nav #card_menu ul{
+        padding: 0px;
+        margin: 0px;
+        margin-top: -15px;
+    }
+
+    header nav #card_menu ul li{
+        display: inline-block;
+        width: 75px;
+        text-align: center;
+        font-size: 1.2em;
+        margin: 0px -2px;
+    }
+
+    header nav #card_menu ul li a{
+        color: #FFF;
+    }
+
+    header #prev_section, header #next_section{
+        position: absolute;
+        width: 55px;
+        height: 55px;
+        background: #29abe2;
+        right: 40px;
+        z-index: 999;
+        border-radius: 50%;
+    }
+
+    header #next_section{
+        top: 115px;
+    }
+
+    header #prev_section{
+        top: 190px;
+    }
+
+    header #prev_section i, header #next_section i{
+        width: 100%;
+        top: 5px;
+        left: 0;
+        color: white;
+        font-size: 2.5em;
+        position: relative;
+    }
+
+    #contact_button{
+		right: 41px;
+	}
+
+    #contact_form{
+		height: 80vh;
+	}
+
+    #slider #aboutme .top_am figure{
+		height: 243px;
+	}
+
+	#slider #skills > div{
+		width: 75%;
+		margin-left: 10%;
+	}
+	#slider #portfolio #content_portfolio,
+	#slider #blog #container_blog{
+		width: 75%;
+		margin-left: 13%;
+	}
+	#slider #portfolio #categorias{
+		text-align: right;
+	}
+
+}
+
+@media screen and (min-width: 950px){
+    #slider #aboutme > div{
+		width: 65%;
+		margin-left: 20%;
+	}
+	#slider #aboutme .top_am{
+		margin-top: 50px;
+		height: auto;
+		background: white;
+		box-shadow: 0px 0px 3px #AFAEAE;
+	}
+	#slider #aboutme .top_am > *{
+		display: inline-block;
+		vertical-align: top;
+	}
+	#slider #aboutme .top_am figure{
+		width: 25%;
+		margin: 0px;
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+		max-height: 360px;
+        margin-left: -1%;
+	}
+	#slider #aboutme .top_am figure img{
+		margin: 0px;
+		width: 100%;
+		transform: scale(1.2);
+	}
+	#slider #aboutme .top_am .text_am{
+		width: 74%; /*520px;*/
+		margin: 0px;
+		/*margin-left: -5px;*/
+		box-shadow: none;
+		padding-bottom: 0px;
+	}
+	#slider #aboutme .top_am .text_am h2{
+		top: -20px;
+		left: -5px;
+	}
+	#slider #aboutme .top_am .text_am p{
+		margin-bottom: 20px;
+	}
+	#slider #aboutme .bottom_am article{
+		width: 20%;
+		margin: 20px 0px;
+		margin-right: 6.1%;
+		box-shadow: 0px 0px 3px #233D58
+	}
+	#slider #aboutme .bottom_am article:nth-child(4){
+		margin-right: 0px;
+	}
+	#slider #skills > div{
+		width: 40%;
+		margin-left: 5%;
+	}
+	#slider #skills #conocimientos ul{
+		margin-top: 30px;
+	}
+	#slider #skills #conocimientos ul li{
+		width: 80%;
+	}
+	#slider #skills #hobbies .hobby{
+		width: 40%;
+		margin:10px 4%;
+	}
+}

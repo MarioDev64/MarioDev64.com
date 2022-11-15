@@ -1,0 +1,49 @@
+.contact-button-animation{
+    background: transparent !important;
+    -moz-animation: 1s contact-button-animation 1;
+    -webkit-animation: contact-button-animation 1s 1;
+    -ms-animation: 1s contact-button-animation 1;
+
+}
+
+@-moz-keyframes contact-button-animation{
+    50%{
+        -moz-transform: rotate(45deg) ;
+    }
+    100%{
+        -moz-transform: translateX(200%);
+    }
+}
+
+@-webkit-keyframes contact-button-animation{
+    50%{
+        -webkit-transform: rotate(45deg) ;
+    }
+    100%{
+        -webkit-transform: translateX(200%);
+    }
+}
+
+.contact-animation{
+    -moz-animation: 0.5s contact-animation 1 ease-in-out;
+    -webkit-animation: contact-animation 0.5s 1 ease-in-out;
+    -ms-animation: 0.5s contact-animation 1 ease-in-out;
+}
+
+@-moz-keyframes contact-animation{
+    0%{
+        -moz-transform: translateX(100%);
+    }
+}
+
+@-webkit-keyframes contact-animation{
+    0%{
+        -webkit-transform: translateX(100%);
+    }
+}
+
+@-ms-keyframes contact-animation{
+    0%{
+        -ms-transform: translateX(100%);
+    }
+}

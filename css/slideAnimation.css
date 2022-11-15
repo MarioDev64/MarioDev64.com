@@ -1,0 +1,21 @@
+.rightSlideAnimation{
+    -moz-animation: 1s rightSlideAnimation 1;
+    -moz-backface-visibility: visible;
+}
+
+@-moz-keyframes rightSlideAnimation{
+    99%{
+        -moz-transform: translateX(-100%);
+    }
+}
+
+.leftSlideAnimation{
+    -moz-animation: 1s leftSlideAnimation 1;
+    -moz-backface-visibility: visible;
+}
+
+@-moz-keyframes leftSlideAnimation{
+    99%{
+        -moz-transform: translateX(100%);
+    }
+}

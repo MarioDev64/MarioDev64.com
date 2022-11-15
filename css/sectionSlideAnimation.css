@@ -1,0 +1,48 @@
+.rightSlideAnimation{
+    -moz-animation: 0.5s rightSlideAnimation 1 ease-in-out;
+    -webkit-animation: rightSlideAnimation 0.5s 1 ease-in-out;
+    -ms-animation: 0.5s rightSlideAnimation 1 ease-in-out;
+}
+
+@-moz-keyframes rightSlideAnimation{
+    0%{
+        -moz-transform: translateX(100%);
+    }
+}
+
+@-webkit-keyframes rightSlideAnimation{
+    0%{
+        -webkit-transform: translateX(100%);
+    }
+}
+
+@-ms-keyframes rightSlideAnimation{
+    0%{
+        -ms-transform: translateX(100%);
+    }
+}
+
+.leftSlideAnimation{
+    -moz-animation: 0.5s leftSlideAnimation 1 ease-in-out;
+    -webkit-animation: leftSlideAnimation 0.5s 1 ease-in-out;
+    -ms-animation: 0.5s leftSlideAnimation 1 ease-in-out;
+
+}
+
+@-moz-keyframes leftSlideAnimation{
+    0%{
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes leftSlideAnimation{
+    0%{
+        -webkit-transform: translateX(100%);
+    }
+}
+
+@-ms-keyframes leftSlideAnimation{
+    0%{
+        -ms-transform: translateX(100%);
+    }
+}
